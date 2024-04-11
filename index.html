@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu e Fotos</title>
+    <style>
+        /* Estilos para o menu */
+        .menu {
+            background-color: #ff0077;
+            overflow: hidden;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li {
+            float: left;
+        }
+
+        .menu ul li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu ul li a:hover {
+            background-color: #070707;
+        }
+
+        /* Estilos para as fotos */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .foto {
+            margin-bottom: 20px;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+
+        .foto img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .foto img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+    </ul>
+</div>
+
+<div class="galeria">
+    <div class="foto">
+        <img src="foto 1.jpg" alt="Foto 1">
+    </div>
+    <div class="foto">
+        <img src="foto 2.webp" alt="Foto 2">
+    </div>
+    <div class="foto">
+        <img src="foto3.webp" alt="Foto 3">
+    </div>
+</div>
+
+</body>
+</html>
